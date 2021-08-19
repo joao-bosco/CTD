@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        <h2>Sala 01</h2>
+    <ul>
+        <li>
+            <strong>João Bosco, Angelica Lírio, Carlos Estefan, Lucas Guimaraes, Paulo Alexandre, Kevin Miranda, Gulherme Rocha</strong>
+        </li>
+    </ul>
+     
+    </p>
+    <script>
+
+        function cotacaoDolar(){
+                    var nomeDoUsuario = prompt('Qual o seu nome?');
+                    var quantidadeDolares = prompt('Quantos dólares você gostaria de cotar?');
+                    var confirmacao = prompt(`Confirma o valor digitado? Valor= ${quantidadeDolares}. Digite 'sim' ou 'não'`);
+                    var cotacaoDolarHoje = 5.3;
+        
+                //console.log (confirmacao)
+            if (confirmacao == "sim"){
+                alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje,`);   
+            } 
+            else{
+                cotacaoDolar ()
+                }
+        }
+                cotacaoDolar();
+
+    </script>
+</body>
+</html>
