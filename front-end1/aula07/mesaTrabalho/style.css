@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: rgba(255, 127, 80, 0.486);
+    /* background-image: url('https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-mesa-de-madeira-com-uma-imagem-defocussed-de-um-barco-em-um-lago_1048-3432.jpg?size=626&ext=jpg'); */
+}
+
+h1{
+    color: darkblue;
+    
+}
+.job-title{
+    background-color: darkblue;
+    font-size: large;
+    color: darkgray;
+}
+   
+#high{
+    font-size: large;
+    color: darkgray;
+}
+
+
+ul{
+    background-color: rgb(174, 174, 177);
+    font-size: medium;
+    color: rgb(7, 41, 7);
+
+}

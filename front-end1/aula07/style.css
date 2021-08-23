@@ -1,0 +1,36 @@
+/* Comentários */
+
+body{
+    background-color: cadetblue;
+}
+
+.titulo{
+
+    color: teal;
+    font-size: 85px
+
+}
+
+p{
+
+    color: tomato;
+
+}
+
+.texto-principal1 {
+
+    color: rgb(45, 0, 128);
+
+}
+
+.texto-principal2 {
+
+    color: rgb(255, 0, 179);
+
+}
+
+#tituloPrincipal{
+    
+    color: rgb(152, 238, 130);
+
+}
