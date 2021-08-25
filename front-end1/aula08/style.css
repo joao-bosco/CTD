@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.tituloPrincipal {
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #80004f;
+
+}
+
+/*div {
+
+    height: 200px;
+    background-image: url('https://img-21.ccm2.net/PkaZDNxdEAAPe5nx_394Q1bLgm4=/500x/5319836089a8425fb2f2e9977cd4a04e/ccm-faq/fotosfocate_unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+.teste {
+    background-color: tomato;
+    height: 200px;
+    background-image: url('aula08-02.png.crdownload');
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}

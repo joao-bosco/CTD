@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital@1&family=Rampart+One&display=swap');
+
+body{
+
+    background-color: #131313;
+
+}
+h1 {
+
+    color: white;
+    font-family: 'Rampart One', cursive, 'Times New Roman', Times, serif;
+    
+}
+
+.media-picture{
+
+    width:  100%;
+    height: 600px;
+    background-image: url('Vingadores.png');
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.review-score {
+
+    color: white;
+    background: #e6bd09;
+    padding: 12px;
+
+}
+
+h2{
+
+    color: steelblue;
+    font-family: 'Roboto', cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+
+    color: #bdbdbd;
+    font-family: 'Azeret Mono', monospace;
+
+}
+
+a{
+
+    color: yellow;
+
+}
