@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - Cálculo IMC</title>
+</head>
+<body>
+    <h1>Cálculo IMC</h1>
+
+    <h2>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</h2>
+
+    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.<br>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+
+    <button onclick="calcularImc()">Calcular IMC</button>
+
+    <script type="text/javascript">
+
+    function calcularImc(){
+        var nome = prompt ("Qual é o seu nome?")
+        var idade = prompt("Informe sua idade (Kg)")
+        var altura = prompt("Informe a sua altura (m)")
+        var peso = prompt("Informe o seu peso (Kg)")
+        var calculoImc = peso / (altura * altura)
+        var perfil = 0
+        var grau = 0
+    
+        if (calculoImc <18.5){
+            perfil = "Magreza";
+            grau = 0;
+        } else if (calculoImc >= 18.5 && calculoImc < 24.9){
+            perfil = "Normal";
+            grau = 0;
+        } else if (calculoImc >= 24.9 && calculoImc < 29.9){
+            perfil = "Sobrepeso";
+            grau = "I";
+        } else if (calculoImc >= 29.9 && calculoImc < 39.9){
+            perfil = "Obesidade";
+            grau = "II";
+        } else{
+            perfil = "Obesidade Grave";
+            grau = "III";
+        }
+    
+        alert (`Olá ${nome}, o valor do seu IMC é ${calculoImc}, Grau "${grau}". Este resultado mostra que sua classificação é "${perfil}". `)
+
+        if (perfil == "Sobrepeso" || perfil == "Obesidade" || perfil == "Obesidade Grave" ){
+           
+            alert(`Com base em seu IMC = "${calculoImc}", perfil "${perfil}", recomendamos uma consulta com nossa Nutricionista.`)
+           
+            var desejaAgendar = prompt("Deseja agendar uma consulta? Responda 'Sim' ou 'Não'")
+            
+            if (desejaAgendar == "Sim"){
+           
+                var diaDaSemana = prompt("Informe qual dia da semana. Temos horário de segunda a sexta-feira.");
+                var horario = prompt("Para finalizarmos o agendamento, informe qual horário deseja agendar sua consulta. Temos horário de 8:00 às 15:00. Digite no formato 00:00.");
+                
+                alert(`Seu agendameto para consulta foi confirmado para ${diaDaSemana}, às ${horario}. Sua consulta será com a nutricionista Dra. Luana Nagydai. Desde já agradecemos por utilizar nosso sistema ${nome}.`);
+           
+            } else {
+                
+                alert (`Obrigado por utilizar nosso sistema ${nome}. Continue cuidando de sua saúde!`);
+
+                }
+            } else{
+                alert (`Obrigado por utilizar nosso sistema ${nome}. Continue cuidando de sua saúde!`);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

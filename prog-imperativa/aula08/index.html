@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Array Parte 01</title>
+</head>
+<body>
+    
+    <script>
+        // Criar a variável Array
+        var frutas = ["Banana", "Laranja"];
+
+        console.log (frutas);
+
+        //CRUD - Criar, Ler, Atualizar, Deletar
+        // Adicionar (criar)
+        frutas.push ("Abacate", "Pêra")
+        frutas.unshift("Mamão");
+        //Remover
+        frutas.pop();  //Ultimo
+        frutas.shift(); //Primeiro
+        //Retornar o index/positionn
+        frutas.indexOf ("Laranja")
+        //Atualizar valor conforme o index
+        frutas [2] = "Pêra;"
+        frutas.push ('Melão')
+        //Retorna a sequência
+        frutas.slice (1)
+        console.log(frutas.slice(0,3));
+        console.log(frutas);
+
+        //Retorna a sequência
+        frutas.splice (1)
+        console.log(frutas.splice(2,3));
+        console.log(frutas);
+        //Resultado
+        //console.log(Object.keys(frutas));// Mostra a lista com posição de cada item
+        //console.log (frutas);
+        //console.log ( `Posição é ${frutas.indexOf ("Laranja")}`); //Mostra a posição de 1 item específico
+        
+    </script>
+ 
+</body>
+</html>

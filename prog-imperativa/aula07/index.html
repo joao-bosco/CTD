@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var diaDaSemana = prompt('Informe o dia da semana');
+        //alert (`Mostar número ${numero}`);
+
+        switch (diaDaSemana){
+            case 'domingo':
+            alert(`${diaDaSemana} é fim de semana`);
+        break;
+        default:
+            alert(`${diaDaSemana} não é fim de semana`);
+        break;
+        }
+
+        // Tipo de varáveis Object
+        var produto = {
+            nome: 'Alcool',
+            marca: 'Assept',    
+            preco: 13.9,
+        }
+
+        // Acessar objeto
+        produto.nome = prompt ('Digite o nome do produto' )
+        alert (`O nome é ${produto.nome}`);
+        alert (`O preço é ${produto.preco}`);
+        alert (produto)
+
+    </script>
+
+
+
+</body>
+</html>
