@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+
+    background-image: url(https://cooperadoresdaverdade.com/wp-content/uploads/2020/03/%C3%89-poss%C3%ADvel-ter-certeza-da-Salva%C3%A7%C3%A3o-Eterna.jpg);
+    width: 1280px;
+    height: 720px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 100px;
+    vertical-align: auto;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: black;
+    font-size: 100px
+
+}
+h2{
+    font-family: 'Alfa Slab One', cursive;
+    color: black;
+    font-size: 50px
+}
+
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #b0b1b0;
+    font-size: 20px;
+    background-color: #195719;
+}
+
+button{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    background-color: #644444;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    border: #961818 solid 6px;
+    cursor: pointer;
+
+}
+a{
+    color: #b0b1b0;
+    font-style: italic;
+}
