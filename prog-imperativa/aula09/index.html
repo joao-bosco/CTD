@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        var numeros = [8, 58, 6, 12, 1, 4, 5, 7, 9,];
+
+
+        //var copiaDosNumeros = numeros.map (function(valor, indice){
+        //     return valor;
+        // })
+
+        //console.log(copiaDosNumeros);
+
+        // Mostra os valores e os indices
+        //var copiaDosNumeros = numeros.map (function(valor, indice){
+        // console.log(valor, indice);
+        // })  
+
+        // Mostra o valor original
+        //var copiaDosNumeros = numeros.map(function (valor, indice, valorOriginal) {
+        //    return valorOriginal;
+        //})
+
+        // Retorna valores duplicados
+        function dobrarValor(valor) {
+            return valor * 2;
+        }
+        function triplicarValor(valor) {
+            return valor * 3;
+        }
+        var valoresDobrados = numeros.map(dobrarValor);
+        var valoresTriplicados = numeros.map(triplicarValor);
+        console.log(valoresDobrados);
+        console.log(valoresTriplicados);
+
+        var valoresNumericos = [10,8,90,26,3]
+        
+        var valoresMaioresQueDez = valoresNumericos.filter(function(valor){
+            return valor > 10
+        });
+
+        console.log (valoresMaioresQueDez);
+
+
+    </script>
+
+
+</body>
+
+</html>

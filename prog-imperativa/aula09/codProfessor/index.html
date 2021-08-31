@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        /* 
+            Array.map();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+        */
+        // Primeira forma
+        var numeros = [8,5,4,78,12,7,1,14,15,18,22];
+
+        var copiaDosNumeros = numeros.map(function(valor, indice, valorOriginal){
+            return valor;
+        });
+
+
+        // Segunda forma
+        // Retorna os valores duplicados
+        // 1. Função que retornará o valor alterado
+        function dobrarValor(valor) {
+            return valor * 2;
+        }
+
+        function triplicarValor(valor) {
+            return valor * 3;
+        }
+
+        // 2. Cópia alterada
+        var valoresDobrados = numeros.map(dobrarValor);
+        var valoresTriplicados = numeros.map(triplicarValor);
+
+
+        /*
+            Array.filter();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+            Remover e retornar os elementos indesejados com base em uma condição.
+        */
+
+        var valoresNumericos = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez = valoresNumericos.filter(function(valor){
+            return valor > 10;
+        });
+
+        /*
+            Array.every();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+            Retorna se todos os elementos de uma array são aprovados na condição.
+        */
+
+        var valoresNumericos = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez = valoresNumericos.every(function(valor){
+            return valor > 10;
+        });
+
+        /*
+            Array.some();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+            Retorna se pelo menos um elemento de uma array for aprovados na condição.
+        */
+
+        var valoresNumericos = [12, 5, 8, 130, 44];
+
+        var valoresMaioresQueDez = valoresNumericos.some(function(elemento) {
+            return elemento > 10;
+        });
+        
+        console.log(valoresMaioresQueDez);
+        
+
+    </script>
+</body>
+</html>
+
