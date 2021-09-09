@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <style>
+        img{
+            width: 50px;
+        }
+        input, select, textarea{
+            border: 1px solid brown;
+            border-radius: 20px;
+            /* display:block */
+            
+        }
+
+        div{
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <form action="">
+
+        <img src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg" alt="">
+
+        <div>
+            <label for="name">Nome: </label>
+            <input type="text" maxlength="5" id="name" name="name" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" id="idade" name="idade">
+        </div>
+
+        <div>
+            <label for="birthDate">Data de nascimento: </label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" placeholder="email@email.com">
+        </div>
+        
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="passwordConfirm">Confirme sua senha:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+        </div>
+
+        <div>
+
+            <label for="city">Cidades</label>
+                <select name="city" id="city">
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="bh">Belo Horizonte</option>
+                    <option value="rioJaneiro">Rio de Janeiro</option>
+                </select>
+        </div>
+
+        <div>
+            <label for="coments">Comentarios</label>
+            <textarea name="coments"  id="coments" cols="30" rows="3"></textarea>
+        </div>
+
+        <button type="submit">Cadastrar</button> 
+        <button type="reset">Limpar</button>
+        <input type="submit" value="Outro tipo de enviar">
+        
+    </form>
+    
+    
+</body>
+</html>

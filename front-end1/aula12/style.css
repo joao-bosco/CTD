@@ -1,0 +1,45 @@
+
+
+body{
+    height: 200vh;
+}
+* {
+    width: 0;
+    height: 0;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.first-box{
+
+    background-color: brown;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    /* left: 100px; */
+    z-index: 3;
+    
+}
+
+.second-box {
+    background-color: chocolate;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 10%;
+}
+
+.third-box {
+    background-color: #221d19;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    left: calc(50vw - 150px);  /* Manter sempre no meio o box */
+}

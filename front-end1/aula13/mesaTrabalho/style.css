@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+
+/*Tipos de fontes
+    font-family: 'Allison', cursive; /Texto estilizado/
+    font-family: 'Anton', sans-serif; /Título/
+    font-family: 'Source Serif Pro', serif; /Texto simples/
+*/
+
+form {
+    width: 30%;
+    height: 60px;
+    background-color: #394602;
+    position: fixed;
+    top: 0px;
+              
+}
+h1{
+    font-family: 'Source Serif Pro', serif;
+    position: fixed;
+    top: 0px;
+    left: 6%;
+    color: cornsilk;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+input, select {
+    border: 1px solid rgb(39, 2, 2);
+    border-radius: 10px;
+    /* display:block */
+}
+
+textarea{
+    border: 1px solid brown;
+    border-radius: 5px;
+    display:block;
+}
+
+div {
+    padding: 5px;
+    font-size: 20px;
+    background-image: url(https://static-cse.canva.com/blob/184311/Fundo-de-Arco-%C3%8Dris-para-Zoom-1.png);
+    /* background-size: 60px; */
+}
+
