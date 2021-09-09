@@ -69,7 +69,7 @@
     }
 
     function contPalavras(){
-        return letraDaMusica.trim().split("  ").length;
+        return letraDaMusica.trim().split(/[,\s/]+/).length;
         }
 
     console.log(`Item 1: ${acharMengo()}`);

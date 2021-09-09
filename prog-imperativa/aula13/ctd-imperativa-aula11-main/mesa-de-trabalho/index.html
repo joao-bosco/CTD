@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesa de Trabalho - Estrutura de repetição</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        /* 
+            Atividade I: Listar todos os filmes
+            
+            Com base no fragmento de código, utilize o bloco de repetição para listar todos os filmes e sua pontuação.
+        */
+        
+        var listaDeFilmes = [
+            {
+                nome: 'O Esquadrão Suicida',
+                ano: 2021,
+                classificacao: 16,
+                duracao: '2h 12min',
+                nota: 7.4,
+            },
+            {
+                nome: 'Shang-Chi e a Lenda dos Dez Anéis',
+                ano: 2021,
+                classificacao: 12,
+                duracao: '2h 12min',
+                nota: 8.1
+            },
+            {
+                nome: 'Free Guy: Assumindo o Controle',
+                ano: 2021,
+                classificacao: 12,
+                duracao: '1h 55min',
+                nota: 7.6
+            },
+            {
+                nome: 'Cruella',
+                ano: 2021,
+                classificacao: 12,
+                duracao: '2h 14min',
+                nota: 7.4
+            },
+            {
+                nome: 'Um Lugar Silencioso: Parte II',
+                ano: 2020,
+                classificacao: 14,
+                duracao: '1h 37min',
+                nota: 7.3
+            }
+        ];
+
+        function listarTodosOsFilmes() {
+            /*
+                Corrija a função nesse trecho para que listar todos os filmes.
+                No momento ele apresenta o filme do indice 0, ou seja, o primeiro filme.
+
+                listaDeFilmes[indice].atributoDoObjeto.
+
+            */
+            console.log('Título:', listaDeFilmes[0].nome);
+            console.log('Ano:', listaDeFilmes[0].ano);
+            console.log('Classificação:', listaDeFilmes[0].classificacao);
+            console.log('Duração:', listaDeFilmes[0].duracao);
+            console.log('Nota:', listaDeFilmes[0].nota);
+            console.log('-----------------------------');
+        }
+
+        listarTodosOsFilmes();
+
+        /* 
+            Atividade II: Quiz
+            
+            Com base no fragmento de código, utilize o bloco de repetição para corrigir o código do Quiz. 
+        */
+
+        var listaDePerguntasERespostas = [
+            {
+                enunciadoDaQuestao: 'Em que ano acontecerá a próxima Copa do Mundo?',
+                resposta: '2022'
+            },
+            {
+                enunciadoDaQuestao: 'Qual a maior montanha do mundo?',
+                resposta: 'Monte Everest'
+            },
+            {
+                enunciadoDaQuestao: 'Qual o maior planeta do sistema solar?',
+                resposta: 'Júpiter'
+            },
+            {
+                enunciadoDaQuestao: 'Quanto tempo a terra leva para dar uma volta completa em torno dela mesma?',
+                resposta: '24h'
+            },
+            {
+                enunciadoDaQuestao: 'Qual o nome do primeiro astronauta a viajar no espaço?',
+                resposta: 'Yuri Gagarin'
+            }
+        ];
+
+        function iniciarQuiz() {
+            /*
+                Corrija a função nesse trecho para que a próxima pergunta seja executada.
+                Sinta-se livre para apagar ou modificar qualquer instruções que não se encaixe em seu algorítimo.
+            */
+            var enunciadoDaQuestao = listaDePerguntasERespostas[0].enunciadoDaQuestao;
+            var respostaDoUsuario = prompt(enunciadoDaQuestao);
+            var respostaCorreta = listaDePerguntasERespostas[0].resposta;
+
+            if(respostaDoUsuario.toLowerCase() == respostaCorreta.toLowerCase()) {
+                alert('Parabéns, você acertou.');
+                iniciarQuiz();
+            } else {
+                // A repetição deve ser encerrada se o usuário errar. 
+                alert('Você errou! Por favor, comece novamente.');
+            }
+            // Por fim, quando todas as questões forem respondidas, o usuário de receber a mensagem 'Parabéns, você acertou doas as questões.'
+        }
+
+        iniciarQuiz();
+
+        /*
+            Documentação dos recursos abordado em aula:
+            * for(valorInicial; condicao; modificador) {} https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for
+            * while(condicao) {} https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while
+            * do {} while(condicao) {} https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/do...while
+        */
+    </script>
+</body>
+</html>
