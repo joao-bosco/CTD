@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - Mesa</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form action="">
+
+        <img src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg" alt="">
+
+        <fieldset>
+            <legend>Dados</legend>
+
+            <h1>Cadastro de usuário</h1>
+
+            <div>
+                <label for="name">Nome: </label>
+                <input type="text" maxlength="5" id="name" name="name" placeholder="Digite seu nome">
+            </div>
+
+            <div>
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" name="idade">
+            </div>
+
+            <div>
+                <input type="checkbox" name="person" checked id="person">
+                <label for="person">Pessoa Física</label>
+            </div>
+
+            <div>
+                <input type="radio" name="option" checked id="option">
+                <label for="option">Opção 1</label>
+                <input type="radio" name="option" checked id="option2">
+                <label for="option">Opção 2</label>
+                <input type="radio" name="option" checked id="option3">
+                <label for="option3">Opção 3</label>
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label for="birthDate">Data de nascimento: </label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" placeholder="email@email.com">
+        </div>
+
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="passwordConfirm">Confirme sua senha:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+        </div>
+
+        <div>
+            <label for="city">Cidades</label>
+            <select name="city" id="city">
+                <option value="saoPaulo">São Paulo</option>
+                <option value="bh">Belo Horizonte</option>
+                <option value="rioJaneiro">Rio de Janeiro</option>
+                <option value="rioJaneiro">João Monlevade</option>
+                <option value="rioJaneiro">Caeté</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="city">Região</label>
+            <input list="citys" name="city" id="city">
+            <datalist id="citys">
+                <select name="city" id="city">
+                    <option value="São Paulo">
+                    <option value="São Pedro">
+                    <option value="São Roque">
+                    <option value="Barão de Cocais">
+                </select>
+            </datalist>
+
+        </div>
+
+        <div>
+            <label for="city">Região</label>
+            <select name="citys" id="city">
+                <optgroup label="Sul">
+                    <option value="1">João Monlevade</option>
+                    <option value="2">Caeté</option>
+                    <option value="3">João Monlevade</option>
+                    <option value="4">Caeté</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="1">João Monlevade</option>
+                    <option value="2">Caeté</option>
+                </optgroup>
+
+        </div>
+
+        <div>
+            <label for="coments">Comentarios</label>
+            <textarea name="coments" id="coments" cols="30" rows="3"></textarea>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+
+</html>

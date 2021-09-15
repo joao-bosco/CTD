@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+
+            width: 200px;
+
+        }
+
+        fieldset {
+
+            /* border: none; */
+
+        }
+
+        legend {
+
+            /* color: salmon;
+            font-size: 24px;
+            text-align: right; */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <img src="https://marcas-logos.net/wp-content/uploads/2020/01/Amazon-Logo-1.png" alt="">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="fullName">Nome completo</label>
+                <input placeholder="Insira o seu nome" type="text" name="fullName" id="fullName">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate" id="birthDate">
+            </div>
+
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <input type="checkbox" name="person" checked id="person">
+                <label for="person">Pessoa física</label>
+            </div>
+
+            <div>
+                <input type="radio" name="option" id="option">
+                <label for="option">Opção 1</label>
+                <input type="radio" name="option" id="option2">
+                <label for="option2">Opção 2</label>
+                <input type="radio" name="option" id="option3">
+                <label for="option3">Opção 3</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Localização</legend>
+
+            <div>
+                <label for="city">Cidade</label>
+                <input required type="search" list="citys" name="city" id="city">
+                <datalist id="citys">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                    <option value="São Paulo">
+                    <option value="São Roque">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="state">Estados</label>
+                <select name="state" id="state">
+                    <optgroup label="Sul">
+                        <option value="1">São Paulo</option>
+                        <option value="2">São Roque</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Pindamonhanagba</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="1">São Paulo</option>
+                        <option value="2">São Roque</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Pindamonhanagba</option>
+                    </optgroup>
+                    <optgroup label="Oeste">
+                        <option value="1">São Paulo</option>
+                        <option value="2">São Roque</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Pindamonhanagba</option>
+                    </optgroup>
+                    <optgroup label="Leste">
+                        <option value="1">São Paulo</option>
+                        <option value="2">São Roque</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Pindamonhanagba</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="observation">Observação</label>
+                <textarea placeholder="Insira com detalhes como sua entrega será feita." name="observation"
+                    id="observation"></textarea>
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar o formulário</button>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Karantina', cursive; */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-
 }
+
 body{
-    height: 200vh;
+    height: 300vh;
 }
 
 header {
     width: 100%;
     height: 100px;
-    background-color: #38322c;
+    background-color: #edfd06;
     position: fixed;
-    top: 0px;
-    
-           
+    top: 0px;          
 }
-
-header img {
+.logo{
     position: relative;
     width: 80px;
     top: 10px;
@@ -28,23 +29,49 @@ header img {
     size: 100%;
     text-align: left;
 }
-header div{
+
+.cabeçalho{
     position: relative;
     bottom: 50px;
-    text-align: center;
-   
-}
-header a{
-    margin: 20px;
-    color: cornsilk;
-    font-family:'Times New Roman', Times, serif;
-font-size: 30px;
+    text-align: center; 
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    
 }
 
-.banner img{
-    width:  100%;
-    height: 100%;
-    background-size: cover;
-    background-position: top;
-    height: 200vh
+.cabeçalho a{
+    margin: 20px;  
 }
+
+.login a{
+    position: relative;
+    left: 95%;
+    padding: 10px;
+    bottom: 60px;
+    font-size: 25px;
+    font-family: 'Karantina', cursive;
+}
+
+.login img{
+    position: absolute;
+    left: 95%;
+    padding: 0px;
+    bottom: 30px;
+    width: 55px;
+    border: solid 3px;
+    
+}
+
+.banner img {
+    width: 600;
+    height: 300;
+    display: flex;
+    flex-wrap: wrap;  
+       
+}
+.position{
+    position: fixed;
+    top: 100px;
+}
+
+
