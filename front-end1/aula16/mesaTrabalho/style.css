@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bola{
+    0%{
+        opacity: 0%;
+        transform: translatex (100px) ;
+    }
+    50%{
+        opacity: 50%;
+        transform: translatex (-100px)
+    }
+}
+
+div{
+    animation-name: bola;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    
+}
+
+body h1{
+    display: flex;
+    color: beige;
+    justify-content: center;
+    font-size: 60px;
+
+}
+
+body h2{
+    color: beige;
+    display: flex;
+    color: beige;
+    padding: 5px;
+    background-color: #008080;
+}
+
+main{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  
+
+}
+
+section :hover {
+
+    transform: scale(1.08);
+    filter: brightness(100%);
+    transition: 1s ease-in-out;
+
+}
+
+main section{
+    color: beige;
+
+}
+
+main section :nth-child(1){
+    height: 200px;  
+    width: 300px;
+}
+
+

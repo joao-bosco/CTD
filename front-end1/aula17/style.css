@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    height: 100vh; /*100vh deixa do tamanho da tela do usuário*/
+    display: flex; /*colocar um ao lado do outro*/
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    flex-direction: row; /*ou colum*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+main section{
+    height: 300px;
+    width: 300px;
+    /* display: inline-block;  Coloca um ao lado do outro */
+}
+
+main section:nth-child(1){
+    background-color: #ee82ee;
+}
+
+main section:nth-child(2){
+    background-color: #829fee;
+}
+
+main section:nth-child(3){
+    background-color: #6d1221;
+}
+
