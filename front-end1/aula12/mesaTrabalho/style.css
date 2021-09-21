@@ -12,6 +12,7 @@ font-family: 'Karantina', cursive; */
 
 body{
     height: 300vh;
+
 }
 
 header {
@@ -19,7 +20,8 @@ header {
     height: 100px;
     background-color: #edfd06;
     position: fixed;
-    top: 0px;          
+    top: 0px; 
+    z-index: 1;         
 }
 .logo{
     position: relative;
@@ -62,16 +64,95 @@ header {
     
 }
 
-.banner img {
-    width: 600;
-    height: 300;
+.bannerA {
+    margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;  
-       
+   justify-content: center;
+
 }
-.position{
+
+.banner2{
+    background-color: #008080;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    width: 500px;
+}
+
+
+.whatsapp{
+
     position: fixed;
-    top: 100px;
+    display: block;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    right: 15px;
+    cursor: pointer;
+    
+    }
+    
+.whatsapp:hover{
+    transform: scale(1.08);
+    filter:brightness(110%);
+    }
+
+
+.produtos{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   gap: 12px;
+   margin: 0 auto;
+   top: 10px;
+   padding: 35px;
+   flex-wrap: wrap;       
+      
 }
 
+.produtoDetails{
+    margin: 6px 6px;
+    top: 50px;
+    position: relative;
+    z-index: 0;
+    
+}
 
+.produtos1{
+
+    width: 411px;
+    height: 300px;
+    transition: ease-in-out 1.0s;
+    z-index: 0;
+    top: 500px; 
+    
+    }
+
+.produtos1:hover{
+    transform: scale(1.1);
+    filter:brightness(100%);
+    opacity: 90%;
+
+}
+
+.button{
+    position: relative;
+    top: 20px;
+    right: 50%;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color:#008080 ;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    z-index: 1;
+    transition: ease-in-out .8s;
+}
+.button:hover{
+    transform: scale(1.15);
+    filter:brightness(110%); 
+    opacity: 90%;
+}
