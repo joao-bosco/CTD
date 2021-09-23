@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter em JS e dividir em módulos</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        /*
+            Atividade I: Converta o documento html para javascript
+            Atividade II: Converta objeto literal em função construtora
+            Atividade III: Divida o código em módulo
+            Atividade IV: Importe o módulo para o documento principal
+        */
+
+        /*
+            Atividade I: Crie um Objeto Literal
+            Vamos simular informações gerais de uma conta bancária. 
+            Para isso deve-se basear nos seguintes recursos:
+            ( x ) Nome completo do usuário.
+            ( x ) Número da Agência.
+            ( x ) Número da Conta.
+            ( x ) Saldo Atual.
+            ( x ) Depósito.
+            ( x ) Saque.
+        */
+
+        var dadosDaConta = {
+            nome: 'Willian',
+            sobrenome: 'Sant Anna',
+            numeroDaAgencia: 2909,
+            numeroDaConta: 49090,
+            saldoAtual: 21400,
+            depositar: function() {
+                // Algorítimo aqui   
+            },
+            sacar: function() {
+                // Algorítimo aqui
+            }
+        }
+
+        /*
+            Atividade II: Adicione funcionalidades ao Objeto Literal.
+            ( x ) O usuário deve ser capaz de visualizar seu Saldo Atual.
+            ( x ) O usuário deve ser capaz de Depositar. Após o depósito o sistema deve informar o Saldo Atual atualizado.
+            ( x ) O usuário deve ser capaz de Sacar. Após o saque o sistema deve informar o Saldo Atual atualizado.
+            ( x ) O usuário não pode ser capaz de sacar mais do que possui de Saldo. se não possui saldo o sistema deve responder uma mensagem de erro.
+
+            Sujestões de mensagem:
+            - Agora seu Saldo Atual é de R$ X.
+            - Você realizou um saque de R$ X. Agora seu Saldo Atual é de R$ X.
+            - Saldo insuficiente! Seu Saldo Atual é de R$ ${this.saldoAtual}.
+        */
+
+        var dadosDaConta = {
+            nome: 'Willian',
+            sobrenome: 'Sant Anna',
+            numeroDaAgencia: 2909,
+            numeroDaConta: 49090,
+            saldoAtual: 0,
+            depositar: function(valorDoDeposito) {
+                // Somando o valor do Saldo Atual com o valor de Depósitado.
+                this.saldoAtual += valorDoDeposito;
+                // Após a somatória apresentando o valor atualizado do Saldo Atual.
+                return `Agora seu Saldo Atual é de R$ ${this.saldoAtual}.`;  
+            },
+            sacar: function(valorDoSaque) {
+                var temSaldoParaOSaque = this.saldoAtual >= valorDoSaque;
+                // Valida se tem Saldo suficiente para o Saque.
+                if(temSaldoParaOSaque) {
+                    // Caso tenha, subtrai o valor do Saldo Atual.
+                    this.saldoAtual -= valorDoSaque;
+                    // Retorna o Saldo Atual após o Saque.
+                    return `Você realizou um saque de R$ ${valorDoSaque}. Agora seu Saldo Atual é de R$ ${this.saldoAtual}.`;
+                }
+                else {
+                    // Caso não tenha saldo retorna a mensagem de Erro e o Saldo Atual.
+                    return `Saldo insuficiente! Seu Saldo Atual é de R$ ${this.saldoAtual}.`;
+                }
+            }
+        }
+
+        console.log('Saldo Atual:', `R$ ${dadosDaConta.saldoAtual}`);
+        console.log('----------------');
+        console.log('Depósito:', dadosDaConta.depositar(1000));
+        console.log('----------------');
+        console.log('Saque:', dadosDaConta.sacar(2000));
+        console.log('Saque:', dadosDaConta.sacar(1000));
+
+        /*
+            Atividade III: Converta os valores em texto JSON
+            ( x ) Converta o resultado o objeto literal em JSON.
+        */
+
+        var json = JSON.stringify(dadosDaConta);
+        console.log('----------------');
+        console.log('Valor convertido em JSON:', json);
+
+    </script>
+</body>
+</html>
